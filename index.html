@@ -1,239 +1,166 @@
 <!DOCTYPE html>
-<html>
-<head><meta name="generator" content="Hexo 3.9.0">
-  <meta charset="utf-8">
-  
-
-  
-  <title>ZClee128</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="ZClee128">
-<meta name="keywords" content="ZClee128">
-<meta property="og:type" content="website">
-<meta property="og:title" content="ZClee128">
-<meta property="og:url" content="http://ZClee128.github.io/index.html">
-<meta property="og:site_name" content="ZClee128">
-<meta property="og:description" content="ZClee128">
-<meta property="og:locale" content="zh-CN">
-<meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="ZClee128">
-<meta name="twitter:description" content="ZClee128">
-  
-    <link rel="alternate" href="/atom.xml" title="ZClee128" type="application/atom+xml">
-  
-  
-    <link rel="icon" href="/favicon.png">
-  
-  
-    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
-  
-  <link rel="stylesheet" href="/css/style.css">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZClee | Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0f172a;
+            color: #f1f5f9;
+        }
+        .glass {
+            background: rgba(30, 41, 59, 0.7);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .gradient-text {
+            background: linear-gradient(90deg, #38bdf8, #818cf8);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .project-card:hover {
+            transform: translateY(-5px);
+            transition: all 0.3s ease;
+            border-color: #38bdf8;
+        }
+    </style>
 </head>
-</html>
-<body>
-  <div id="container">
-    <div id="wrap">
-      <header id="header">
-  <div id="banner"></div>
-  <div id="header-outer" class="outer">
-    <div id="header-title" class="inner">
-      <h1 id="logo-wrap">
-        <a href="/" id="logo">ZClee128</a>
-      </h1>
-      
-        <h2 id="subtitle-wrap">
-          <a href="/" id="subtitle">ZClee128</a>
-        </h2>
-      
-    </div>
-    <div id="header-inner" class="inner">
-      <nav id="main-nav">
-        <a id="main-nav-toggle" class="nav-icon"></a>
-        
-          <a class="main-nav-link" href="/">Home</a>
-        
-          <a class="main-nav-link" href="/archives">Archives</a>
-        
-      </nav>
-      <nav id="sub-nav">
-        
-          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
-        
-        <a id="nav-search-btn" class="nav-icon" title="搜索"></a>
-      </nav>
-      <div id="search-form-wrap">
-        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://ZClee128.github.io"></form>
-      </div>
-    </div>
-  </div>
-</header>
-      <div class="outer">
-        <section id="main">
-  
-    <article id="post-test" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2019/08/15/test/" class="article-date">
-  <time datetime="2019-08-15T10:06:03.235Z" itemprop="datePublished">2019-08-15</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/08/15/test/">zclee</a>
-    </h1>
-  
+<body class="min-h-screen">
 
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>testsssss</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ok b</span><br></pre></td></tr></table></figure>
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 px-6 py-4 flex justify-between items-center glass">
+        <div class="text-2xl font-bold gradient-text">ZClee.</div>
+        <div class="space-x-6 text-sm font-medium">
+            <a href="#about" class="hover:text-sky-400 transition">About</a>
+            <a href="#projects" class="hover:text-sky-400 transition">Projects</a>
+            <a href="https://github.com/ZClee128" target="_blank" class="px-4 py-2 bg-sky-500 rounded-full text-white hover:bg-sky-600 transition">GitHub</a>
+        </div>
+    </nav>
 
+    <!-- Hero Section -->
+    <section id="about" class="pt-32 pb-20 px-6 text-center max-w-4xl mx-auto">
+        <div class="mb-6 inline-block p-1 rounded-full bg-gradient-to-r from-sky-400 to-indigo-500">
+            <img src="https://github.com/ZClee128.png" class="w-24 h-24 rounded-full border-4 border-slate-900" alt="Profile">
+        </div>
+        <h1 class="text-5xl md:text-7xl font-bold mb-6">Hi, I'm <span class="gradient-text">ZClee</span></h1>
+        <p class="text-xl text-slate-400 mb-10 leading-relaxed">
+            iOS & Android Developer <span class="text-slate-600 mx-2">|</span> Open Source Contributor <br>
+            Passionate about building <span class="text-sky-400 font-semibold">efficient libraries</span> and <span class="text-indigo-400 font-semibold">reactive programming</span>.
+        </p>
+        
+        <!-- Tech Stack -->
+        <div class="flex flex-wrap justify-center gap-3">
+            <span class="px-4 py-1 rounded-full glass text-xs font-medium border-sky-500/30 text-sky-300">Swift</span>
+            <span class="px-4 py-1 rounded-full glass text-xs font-medium border-purple-500/30 text-purple-300">Kotlin</span>
+            <span class="px-4 py-1 rounded-full glass text-xs font-medium border-blue-500/30 text-blue-300">C++</span>
+            <span class="px-4 py-1 rounded-full glass text-xs font-medium border-orange-500/30 text-orange-300">Combine</span>
+            <span class="px-4 py-1 rounded-full glass text-xs font-medium border-orange-500/30 text-orange-300">RXSwift</span>
+            <span class="px-4 py-1 rounded-full glass text-xs font-medium border-green-500/30 text-green-300">Android SDK</span>
+        </div>
+    </section>
 
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://ZClee128.github.io/2019/08/15/test/" data-id="cjzcixp3p0001ly5xq8j6erlr" class="article-share-link">Share</a>
-      
-      
+    <!-- Projects Section -->
+    <section id="projects" class="py-20 px-6 max-w-6xl mx-auto">
+        <h2 class="text-3xl font-bold mb-12 text-center"><span class="gradient-text">Featured</span> Projects</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <!-- Project 1 -->
+            <a href="https://github.com/ZClee128/RXSwift-" target="_blank" class="project-card glass p-6 rounded-2xl block group">
+                <div class="flex justify-between items-start mb-4">
+                    <div class="p-3 rounded-lg bg-sky-500/10 text-sky-400"><i class="fa-solid fa-code"></i></div>
+                    <i class="fa-brands fa-github text-slate-500 group-hover:text-white transition"></i>
+                </div>
+                <h3 class="text-xl font-semibold mb-2 group-hover:text-sky-400 transition">RXSwift-</h3>
+                <p class="text-slate-400 text-sm leading-relaxed mb-4">A comprehensive guide and practical examples for mastering RxSwift in Swift development.</p>
+                <div class="flex gap-2">
+                    <span class="text-[10px] px-2 py-0.5 rounded bg-sky-500/20 text-sky-300">Swift</span>
+                </div>
+            </a>
+
+            <!-- Project 2 -->
+            <a href="https://github.com/ZClee128/better_socket" target="_blank" class="project-card glass p-6 rounded-2xl block group">
+                <div class="flex justify-between items-start mb-4">
+                    <div class="p-3 rounded-lg bg-purple-500/10 text-purple-400"><i class="fa-solid fa-network-wired"></i></div>
+                    <i class="fa-brands fa-github text-slate-500 group-hover:text-white transition"></i>
+                </div>
+                <h3 class="text-xl font-semibold mb-2 group-hover:text-purple-400 transition">better_socket</h3>
+                <p class="text-slate-400 text-sm leading-relaxed mb-4">A high-performance, robust Socket plugin for Kotlin designed for stability and scalability.</p>
+                <div class="flex gap-2">
+                    <span class="text-[10px] px-2 py-0.5 rounded bg-purple-500/20 text-purple-300">Kotlin</span>
+                </div>
+            </a>
+
+            <!-- Project 3 -->
+            <a href="https://github.com/ZClee128/ZCMacro" target="_blank" class="project-card glass p-6 rounded-2xl block group">
+                <div class="flex justify-between items-start mb-4">
+                    <div class="p-3 rounded-lg bg-blue-500/10 text-blue-400"><i class="fa-solid fa-microchip"></i></div>
+                    <i class="fa-brands fa-github text-slate-500 group-hover:text-white transition"></i>
+                </div>
+                <h3 class="text-xl font-semibold mb-2 group-hover:text-blue-400 transition">ZCMacro</h3>
+                <p class="text-slate-400 text-sm leading-relaxed mb-4">Advanced macro expansion extensions for Swift to enhance developer productivity.</p>
+                <div class="flex gap-2">
+                    <span class="text-[10px] px-2 py-0.5 rounded bg-blue-500/20 text-blue-300">Swift</span>
+                </div>
+            </a>
+
+            <!-- Project 4 -->
+            <a href="https://github.com/ZClee128/zcscan" target="_blank" class="project-card glass p-6 rounded-2xl block group">
+                <div class="flex justify-between items-start mb-4">
+                    <div class="p-3 rounded-lg bg-green-500/10 text-green-400"><i class="fa-solid fa-qrcode"></i></div>
+                    <i class="fa-brands fa-github text-slate-500 group-hover:text-white transition"></i>
+                </div>
+                <h3 class="text-xl font-semibold mb-2 group-hover:text-green-400 transition">zcscan</h3>
+                <p class="text-slate-400 text-sm leading-relaxed mb-4">A unique QR code recognition and positioning tool with high customization and UI flexibility.</p>
+                <div class="flex gap-2">
+                    <span class="text-[10px] px-2 py-0.5 rounded bg-green-500/20 text-green-300">Swift</span>
+                </div>
+            </a>
+
+            <!-- Project 5 -->
+            <a href="https://github.com/ZClee128/SwiftSvgaPlayer" target="_blank" class="project-card glass p-6 rounded-2xl block group">
+                <div class="flex justify-between items-start mb-4">
+                    <div class="p-3 rounded-lg bg-pink-500/10 text-pink-400"><i class="fa-solid fa-play"></i></div>
+                    <i class="fa-brands fa-github text-slate-500 group-hover:text-white transition"></i>
+                </div>
+                <h3 class="text-xl font-semibold mb-2 group-hover:text-pink-400 transition">SwiftSvgaPlayer</h3>
+                <p class="text-slate-400 text-sm leading-relaxed mb-4">A streamlined and efficient SVGA player implementation for Swift.</p>
+                <div class="flex gap-2">
+                    <span class="text-[10px] px-2 py-0.5 rounded bg-pink-500/20 text-pink-300">Swift</span>
+                </div>
+            </a>
+
+            <!-- Project 6 -->
+            <a href="https://github.com/ZClee128/ZCJSON" target="_blank" class="project-card glass p-6 rounded-2xl block group">
+                <div class="flex justify-between items-start mb-4">
+                    <div class="p-3 rounded-lg bg-yellow-500/10 text-yellow-400"><i class="fa-solid fa-file-code"></i></div>
+                    <i class="fa-brands fa-github text-slate-500 group-hover:text-white transition"></i>
+                </div>
+                <h3 class="text-xl font-semibold mb-2 group-hover:text-yellow-400 transition">ZCJSON</h3>
+                <p class="text-slate-400 text-sm leading-relaxed mb-4">An enhanced native JSON parsing library for Swift that seamlessly integrates with Codable.</p>
+                <div class="flex gap-2">
+                    <span class="text-[10px] px-2 py-0.5 rounded bg-yellow-500/20 text-yellow-300">Swift</span>
+                </div>
+            </a>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="py-20 px-6 max-w-4xl mx-auto text-center">
+        <h2 class="text-3xl font-bold mb-12"><span class="gradient-text">GitHub</span> Stats</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 items-center">
+            <img src="https://github-readme-stats.vercel.app/api?username=ZClee128&show_icons=true&theme=radical&hide_border=true" class="w-full rounded-2xl" />
+            <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=ZClee128&layout=compact&theme=radical&hide_border=true" class="w-full rounded-2xl" />
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-10 text-center text-slate-500 text-sm border-t border-slate-800">
+        <p>© 2026 ZClee. Built with ❤️ and Tailwind CSS.</p>
     </footer>
-  </div>
-  
-</article>
 
-
-  
-    <article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2019/08/15/hello-world/" class="article-date">
-  <time datetime="2019-08-15T09:13:54.813Z" itemprop="datePublished">2019-08-15</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/08/15/hello-world/">Hello World</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://ZClee128.github.io/2019/08/15/hello-world/" data-id="cjzcixp100000ly5xc5pf74n5" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-
-
-</section>
-        
-          <aside id="sidebar">
-  
-    
-
-  
-    
-
-  
-    
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">归档</h3>
-    <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/08/">八月 2019</a></li></ul>
-    </div>
-  </div>
-
-
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">最新文章</h3>
-    <div class="widget">
-      <ul>
-        
-          <li>
-            <a href="/2019/08/15/test/">zclee</a>
-          </li>
-        
-          <li>
-            <a href="/2019/08/15/hello-world/">Hello World</a>
-          </li>
-        
-      </ul>
-    </div>
-  </div>
-
-  
-</aside>
-        
-      </div>
-      <footer id="footer">
-  
-  <div class="outer">
-    <div id="footer-info" class="inner">
-      &copy; 2019 lizhicong<br>
-      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
-    </div>
-  </div>
-</footer>
-    </div>
-    <nav id="mobile-nav">
-  
-    <a href="/" class="mobile-nav-link">Home</a>
-  
-    <a href="/archives" class="mobile-nav-link">Archives</a>
-  
-</nav>
-    
-
-<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
-
-
-  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
-  <script src="/fancybox/jquery.fancybox.pack.js"></script>
-
-
-<script src="/js/script.js"></script>
-
-
-
-  </div>
 </body>
 </html>
